@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layoutuser.cshtml";
+}
+<center>
+    <form action="/Home/Login" method="post" id="fm">
+        <h1 style="text-align:center;">Login</h1>
+        <br />
+        <input type="email" name="Admin_Email" placeholder="Email" />
+        <br />
+        <input type="password" name="Admin_Password" placeholder="Password" />
+        <br />
+        <input type="submit" value="Login" id="sp" />
+        <br />
+        @ViewBag.Message
+
+    </form>
+</center>
